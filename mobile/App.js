@@ -35,7 +35,7 @@ render() {
         <View style={styles.container}>
           <Text>La liste des meetups :</Text>
           {this.state.meetups.map((meetup, i) => (
-            <Text key={i}>{meetup.title}</Text>
+            <Text key={i}>{meetup.title} : {meetup.description}</Text>
           ))}
         </View>
       );
